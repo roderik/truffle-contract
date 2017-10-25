@@ -784,7 +784,23 @@ var contract = (function(module) {
       } catch (e) {
         return this._json.updated_at;
       }
-    }
+    },
+    devdoc: {
+       get: function() {
+         return this._json.devdoc;
+       },
+       set: function(val) {
+         this._json.devdoc = val;
+       }
+     },
+    userdoc: {
+       get: function() {
+         return this._json.userdoc;
+       },
+       set: function(val) {
+         this._json.userdoc = val;
+       }
+     }
   };
 
   Utils.bootstrap(Contract);
